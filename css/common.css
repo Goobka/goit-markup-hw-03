@@ -15,10 +15,22 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid violet;
 }
 /* Navigation */
 /* Logo */
+.page-header {
+  outline: 2px solid violet;
+}
 .logo {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -64,9 +76,14 @@ body {
 /* Footer */
 footer {
   background-color: var(--footer-bg-color);
+  outline: 2px solid violet;
+  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 address {
+  margin-top: 20px;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-style: normal;
@@ -91,12 +108,20 @@ address {
 
 /* Button */
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
+
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
+
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-decoration: none;
+  text-align: center;
 }
