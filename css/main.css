@@ -10,14 +10,19 @@
 /* Hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
+
   background-color: #2f303a;
   text-align: center;
 
   outline: 2px solid violet;
 }
 .hero .title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  max-width: 696px;
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -57,14 +62,19 @@
 }
 
 /* Features */
-.section .container {
-  padding-top: 0;
+.features {
+  display: flex;
   padding-bottom: 0;
 }
-.activity .container {
-  margin-top: 94px;
+
+.features .item {
+  display: inline-block;
+  width: calc((100%-30 * 3) / 4);
 }
-.section .subtitle {
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+.features .subtitle {
   margin-top: 30px;
 }
 .features .text {
@@ -78,18 +88,39 @@
 .features .image:focus {
   background-color: #2196f3;
 }
-/* Our teem */
-.team .container {
-  margin-top: 94px;
+
+/* Activity */
+.activity-list {
+  display: flex;
+  margin-top: 50px;
+}
+.activity-item {
+  width: calc((100%-30 * 2) / 3);
+}
+.activity-item:not(:last-child) {
+  margin-right: 30px;
+}
+.activity .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container .worker {
-  padding-bottom: 30px;
+
+/* Our teem */
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.worker {
+  display: flex;
+  margin-top: 50px;
 }
 .worker > .item {
-  margin-top: 50px;
   padding-top: 0;
+  padding-bottom: 30px;
+  width: calc((100%-30 * 3) / 4);
+}
+.worker .item:not(:last-child) {
+  margin-right: 30px;
 }
 .worker .list {
   margin-top: 16px;
@@ -102,6 +133,7 @@
 .team .text {
   margin-top: 10px;
   margin-bottom: 0;
+  text-align: center;
   font-weight: 400;
 }
 .team .title {
@@ -123,7 +155,18 @@
   font-weight: 400;
   text-align: center;
 }
-/* Clients */
+/* Clients  Доработаю в 4 дз*/
 .clients .container {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+.clients-list .item {
+  width: calc((100%-30 * 5) / 6);
+}
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
 }
