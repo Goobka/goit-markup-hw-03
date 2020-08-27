@@ -8,14 +8,13 @@
 /* цвет фона футера #2F303A */
 
 /* Hero */
-
+.hero-section {
+  background-color: #2f303a;
+}
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
   text-align: center;
-
-  outline: 2px solid violet;
 }
 .hero .title {
   margin: 0;
@@ -25,8 +24,6 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  outline: 2px solid violet;
 }
 .hero .button {
   margin-top: 30px;

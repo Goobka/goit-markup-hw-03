@@ -6,6 +6,9 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
+  --logo-main-color: #000000;
+  --header-border-color: #ececec;
+  --portfolio-border-color: #eeeeee;
 }
 
 body {
@@ -25,7 +28,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid violet;
 }
 .img {
   display: inline-block;
@@ -40,11 +42,13 @@ img {
   padding-top: 94px;
 }
 /* Header */
+.header-section {
+  border-bottom: 1px solid var(--header-border-color);
+}
 .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 .navigation,
 .address {
@@ -71,10 +75,10 @@ img {
   text-decoration: none;
 }
 .logo .main {
-  color: #000000;
+  color: var(--logo-main-color);
 }
 .logo .accent {
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 
 /* Site-nav */
@@ -127,12 +131,12 @@ img {
 }
 
 /* Footer */
+.footer-section {
+  background-color: var(--footer-bg-color);
+}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  background-color: var(--footer-bg-color);
-  outline: 2px solid violet;
 }
 .footer-address {
   width: 270px;
