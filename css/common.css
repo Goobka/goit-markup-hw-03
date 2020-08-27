@@ -44,6 +44,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 .navigation,
 .address {
@@ -133,7 +134,9 @@ img {
   background-color: var(--footer-bg-color);
   outline: 2px solid violet;
 }
-
+.footer-address {
+  width: 270px;
+}
 .footer-address,
 .post {
   margin-top: 20px;

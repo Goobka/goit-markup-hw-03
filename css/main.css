@@ -12,9 +12,6 @@
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 252px;
-  padding-right: 252px;
-
   background-color: #2f303a;
   text-align: center;
 
@@ -22,7 +19,6 @@
 }
 .hero .title {
   margin: 0;
-  max-width: 696px;
   color: var(--secondary-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -106,29 +102,14 @@
 }
 
 /* Our teem */
-.team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.worker {
-  display: flex;
-  margin-top: 50px;
-}
-.worker > .item {
-  padding-top: 0;
-  padding-bottom: 30px;
-  width: calc((100%-30 * 3) / 4);
-}
-.worker .item:not(:last-child) {
-  margin-right: 30px;
-}
-.worker .list {
-  margin-top: 16px;
-}
 .team {
   background-color: var(--secondary-bg-color);
   font-size: 16px;
   line-height: 1.19;
+}
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team .text {
   margin-top: 10px;
@@ -143,7 +124,7 @@
   font-size: 16px;
   line-height: 1.19;
 }
-.team .list {
+.worker .item {
   background-color: var(--primary-bg-color);
 }
 
@@ -151,12 +132,28 @@
 .team .list.link:focus {
   color: var(--accent-color);
 }
-.team .p {
+.team .text {
   font-weight: 400;
   text-align: center;
 }
+.worker {
+  display: flex;
+  margin-top: 50px;
+}
+.worker .item {
+  padding-top: 0;
+  padding-bottom: 30px;
+  width: calc((100%-30 * 3) / 4);
+}
+.worker .item:not(:last-child) {
+  margin-right: 30px;
+}
+.worker .list {
+  margin-top: 16px;
+}
+
 /* Clients  Доработаю в 4 дз*/
-.clients .container {
+/* .clients .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -169,4 +166,4 @@
 }
 .clients-list .item:not(:last-child) {
   margin-right: 30px;
-}
+} */
